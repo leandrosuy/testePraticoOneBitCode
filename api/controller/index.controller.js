@@ -5,7 +5,7 @@ const SMTP_CONFIG = require('./nodemailer');
 const pool = new Pool({
     host: 'localhost',
     user: 'postgres',
-    password: '@lodj21#',
+    password: 'senha_postgres',
     database: 'emails',
     port: '5432'
 });
@@ -23,12 +23,6 @@ const trasporter = nodemailer.createTransport({
     }
 })
 
-const getEmails = async (request, response) => {
-    const resp = await pool.query('SELECT * FROM emails');
-    console.log(resp.rows);
-    response.json(resp.rows)
-}
-
 const createEmail = async (request, response) => {
     const { email } = request.body;
     const resp = await pool.query('INSERT INTO  emails (email) VALUES ($1)', [email]);
@@ -41,7 +35,7 @@ async function sendEmail(email) {
     const mailSend = await trasporter.sendMail({
         subject: 'Parabéns!!!',
         text: 'Parabéns, Agora você e assinante da nossa Newslette, prepare-se para Notícias semanas de muito conhecimento.',
-        from: 'Leandro Dantas <leandrosuy@gmail.com',
+        from: 'Leandro Dantas <email_empresa>',
         to: [`${email}`]
     })
 
@@ -49,7 +43,6 @@ async function sendEmail(email) {
 }
 
 module.exports = {
-    getEmails,
     createEmail,
     sendEmail
 }
