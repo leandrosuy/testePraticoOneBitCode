@@ -3,8 +3,8 @@
 ## Demo 📸
 
 <div align="center" >
-  <img src="./github/inicio.png" alt="demo-mobile" height="425">
-   <img src="./github/funcionamento.gif" alt="demo-mobile" height="425">
+  <img src="./github/preview.gif" alt="demo-mobile" height="425">
+   <img src="./github/error.gif" alt="demo-mobile" height="425">
 </div>
 
 ---
