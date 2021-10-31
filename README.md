@@ -11,7 +11,7 @@
 
 ## Sobre o Projeto
 
-O Projeto Newsletter foi desenvolvido para um Teste Pratico nas tecnologias: HTML, CSS, Bootstrap, JavaScript e Postgres.
+O Projeto Newsletter foi desenvolvido para um Teste Prático nas tecnologias: HTML, CSS, JavaScript, Bootstrap e PostgresSQL.
 
 Para ver o **App Web**, clique aqui: [Frontend Newsletter](https://github.com/leandrosuy/testePraticoOneBitCode)
 Para ver o **BackEnd**, clique aqui: [Backend Newsletter](https://github.com/leandrosuy/testePraticoOneBitCode/tree/master/api)
@@ -22,6 +22,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [NodeJS](https://nodejs.dev/)
 - [Axios](https://github.com/axios/axios)
+- [Express](https://expressjs.com/pt-br/)
+- [Bootstrap](https://getbootstrap.com/)
+
 
 ---
 
@@ -38,9 +41,7 @@ $ git clone https://github.com/leandrosuy/testePraticoOneBitCode
 # Instale as dependências
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
-$ yarn start
-# ou
+# Execute a aplicação apatir da pasta API
 $ npm start
 
 ```
