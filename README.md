@@ -79,8 +79,8 @@ Dentro da pasta "controller" criaremos um arquivo chamado index.controller.js, d
 
     const pool = new Pool({
         host: 'localhost',
-        user: 'postgres',
-        password: '@lodj21#',
+        user: 'usuario_banco',
+        password: 'senha_do_banco',
         database: 'emails',
         port: '5432'
     });
