@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-img{
+    margin: 0 auto;
+}
+
+.form-control:focus {
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+.btn-bg {
+    background-color: #fc4e51;
+    color: #fff;
+    padding: 12px;
+}
+
+.input-bg {
+    height: 45px;
+}
